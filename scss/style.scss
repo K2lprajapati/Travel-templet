@@ -1,0 +1,441 @@
+@import "../font/fontawesome-free-5.8.1-web/css/fontawesome.css";
+@import "../helper/veriable";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/poppins/Poppins-Regular.eot');
+  src: url('../font/poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/poppins/Poppins-Regular.woff2') format('woff2'),
+  url('../font/poppins/Poppins-Regular.woff') format('woff'),
+  url('../font/poppins/Poppins-Regular.ttf') format('truetype'),
+  url('../font/poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.custom-nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  .custom-menu-bar {
+    .navbar-nav {
+      .nav-item {
+        a {
+          width: 114px;
+          font-size: $font-size;
+          font-weight: 600;
+          &:hover {
+            color: $white-color;
+            border-bottom: 1px solid #ff6600;
+            transition: all ease-in-out .2s;
+          }
+        }
+        .nav-link.active {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+/*---slider section css---*/
+.slider-img {
+  background-image: url(../img/main_slide_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .slider-overlay {
+    position: absolute;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .slider-text {
+    margin: 0 -50% 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white-color;
+    .slider-btn {
+      button {
+        border-radius: 100px;
+        background-color: $primary-color;
+        color: $white-color;
+        border: 1px solid $primary-color;
+        width: 200px;
+        padding: 9px 15px;
+        font-size: 18px;
+        font-family: 'Poppins';
+        &:hover, &:focus {
+          background-color: transparent;
+          border: 1px solid $primary-color;
+          outline: none;
+          box-shadow: none !important;
+        }
+      }
+    }
+    p {
+      &:nth-child(1) {
+        font-size: 56px;
+        letter-spacing: 11px;
+        font-family: 'Poppins';
+        line-height: 1;
+      }
+      &:nth-of-type(2) {
+        font-size: 54px;
+        line-height: 1.5;
+        letter-spacing: 11px;
+        font-family: 'Poppins';
+      }
+      &:nth-of-type(3) {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/*---booking css---*/
+.booking_tabs {
+  .tab_main {
+    margin: -40px auto;
+    position: relative;
+    .tab {
+      overflow: hidden;
+      background-color: transparent;
+      .nav-tabs {
+        .nav-item {
+          a.nav-link {
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: 0;
+            &:hover {
+              border: 0;
+            }
+          }
+          a.nav-link.active {
+            background-color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+  }
+  .booking-details {
+    padding: 30px 0;
+    .input-group {
+      margin-bottom: 10px;
+      width: 100% !important;
+    }
+    label {
+      font-size: $font-size;
+      color: $text-color;
+    }
+  }
+  .btn-search {
+    button {
+      @include search_button();
+      &:hover {
+        @include search_button_hover();
+      }
+    }
+  }
+}
+
+/*------destination css---------*/
+.destination-section {
+  background: #efecec;
+  margin: 40px 0 0;
+  .destination_div {
+    .destination-data {
+      background-color: $white-color;
+    }
+    .details {
+      padding: 12px 15px;
+      .price {
+        color: #7db921;
+        font-size: inherit;
+        line-height: 1;
+        small {
+          color: #838383;
+          font-size: 0.5em;
+        }
+      }
+      .box-title {
+        margin-bottom: 10px;
+        color: #2d3e52;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/*hotal for tour*/
+.hotal_tour {
+  .details_offer {
+    img {
+      border-radius: 5px;
+    }
+    .details_info {
+      .star_rating {
+        span {
+          color: #eaea18;
+        }
+      }
+      p {
+        letter-spacing: 1.5px;
+        font-size: $font-size;
+        &:nth-of-type(2) {
+          color: $text-color;
+          font-size: 13px;
+        }
+      }
+      span {
+        text-decoration: line-through;
+        color: $text-color;
+        margin-right: 6px;
+        b {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+/*----best offer section css ----*/
+.best_offer_section {
+  background-image: url(../img/main_image.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  p.offer_title {
+    color: $white-color;
+    font-size: 41px;
+  }
+  .box-img-text-main {
+    background-color: $white-color;
+    border-radius: 5px;
+    .box-img {
+      img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+    .offer-details {
+      padding: 20px 15px;
+      p {
+        font-size: 22px;
+        font-weight: 700;
+        span {
+          font-weight: 500;
+        }
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        color: $text-color;
+        li {
+          margin-right: 20px;
+          position: relative;
+          font-size: $font-size;
+          &:nth-child(1):after {
+            @include offer-details_ul_li_after();
+          }
+          p {
+            font-size: $font-size;
+          }
+        }
+      }
+    }
+  }
+  .custom-btn {
+    @include search_button();
+    &:hover {
+      @include search_button_hover();
+    }
+  }
+}
+/*subscribe section*/
+.subscribe_section {
+  background-image: url(../img/bg_block_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  .subscribe_title {
+    color: $white-color;
+    font-size: 40px;
+    p {
+      &:after {
+        content: "";
+        border: 2px solid $white-color;
+        display: block;
+      }
+    }
+  }
+  .email_form {
+    text-align: center;
+    .custom-btn {
+      @include search_button();
+      &:hover {
+      @include search_button_hover()
+      }
+    }
+    input {
+      border-radius: 10px;
+      background-color: transparent;
+      color: $white-color;
+      &::placeholder {
+        color: $white-color;
+        text-transform: capitalize;
+        font-size: $font-size;
+      }
+    }
+  }
+}
+
+/*----faq section-----*/
+.faq_section {
+  .faq_main_div {
+    .faq_title {
+      p {
+        font-size: 40px;
+      }
+    }
+    .custom-btn {
+      color: $black;
+      font-size: $font-size;
+    }
+    .accordion_text {
+      font-size: 13px;
+      color: $text-color;
+    }
+  }
+}
+
+/*---testimonial_section---*/
+.testimonial_section {
+  background-image: url(../img/bg_block_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .subscribe_title {
+    color: $white-color;
+    font-size: 40px;
+    margin-bottom: 21px;
+  }
+  .sg-testimonals {
+    p {
+      color: $white-color;
+    }
+    h3 {
+      color: $white-color;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/*---footer section---*/
+.footer_section {
+  background-color: #efecec;
+  .contact_list {
+    ul {
+      li {
+        i {
+          margin-right: 15px;
+          color: #f76d19;
+          &:first-child {
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+  .discover_link {
+    ul {
+      li {
+        i {
+          font-size: 11px;
+          margin-right: 10px;
+        }
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+  .social_media {
+    height: 100px;
+    ul {
+      li {
+        width: 50px;
+      }
+    }
+  }
+  .title_block {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .custom-nav {
+    position: unset;
+    background-color: #4c7592;
+    .custom-menu-bar {
+      .navbar-nav {
+        .nav-item {
+          a {
+            width: 100%;
+            font-size: $font-size;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .slider-img {
+    .slider-text {
+      top: 40%;
+      p:nth-of-type(2) {
+        font-size: 25px;
+      }
+      p:nth-child(1) {
+        font-size: 38px;
+        letter-spacing: 8px;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+  }
+  .booking_tabs {
+    background-image: linear-gradient(to right, #1f687f, #1d5281, #1a5673);
+    .booking-details {
+      label {
+        color: $white-color;
+        width: 100%;
+      }
+    }
+    .tab_main {
+      margin: -33px auto;
+      ul {
+        li {
+          width: 50%;
+          font-size: 12px;
+        }
+      }
+      .dropdown_div {
+        width: 100%;
+      }
+    }
+  }
+}

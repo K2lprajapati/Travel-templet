@@ -1,0 +1,36 @@
+$primary-color:#ff6600;
+$white-color:#fff;
+$black:#000;
+$text-color:#a7a7a7;
+$font-size:15px;
+
+@mixin search_button(){
+  border-radius: 100px;
+  background-color: $primary-color;
+  color: $white-color;
+  border: 1px solid $primary-color;
+  width: 200px;
+  padding: 10px 19px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins';
+}
+
+@mixin search_button_hover(){
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  outline: none;
+  box-shadow: none !important;
+  color: $black;
+}
+@mixin offer-details_ul_li_after(){
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: $text-color;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  top: 10px;
+  right: -12px;
+}

@@ -1,0 +1,334 @@
+@import url(../font/fontawesome-free-5.8.1-web/css/fontawesome.css);
+@font-face {
+  font-family: 'Poppins';
+  src: url("../font/poppins/Poppins-Regular.eot");
+  src: url("../font/poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../font/poppins/Poppins-Regular.woff2") format("woff2"), url("../font/poppins/Poppins-Regular.woff") format("woff"), url("../font/poppins/Poppins-Regular.ttf") format("truetype"), url("../font/poppins/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Poppins'; }
+
+.custom-nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%; }
+  .custom-nav .custom-menu-bar .navbar-nav .nav-item a {
+    width: 114px;
+    font-size: 15px;
+    font-weight: 600; }
+    .custom-nav .custom-menu-bar .navbar-nav .nav-item a:hover {
+      color: #fff;
+      border-bottom: 1px solid #ff6600;
+      transition: all ease-in-out .2s; }
+  .custom-nav .custom-menu-bar .navbar-nav .nav-item .nav-link.active {
+    color: #fff; }
+
+/*---slider section css---*/
+.slider-img {
+  background-image: url(../img/main_slide_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .slider-img .slider-overlay {
+    position: absolute;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .slider-img .slider-text {
+    margin: 0 -50% 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; }
+    .slider-img .slider-text .slider-btn button {
+      border-radius: 100px;
+      background-color: #ff6600;
+      color: #fff;
+      border: 1px solid #ff6600;
+      width: 200px;
+      padding: 9px 15px;
+      font-size: 18px;
+      font-family: 'Poppins'; }
+      .slider-img .slider-text .slider-btn button:hover, .slider-img .slider-text .slider-btn button:focus {
+        background-color: transparent;
+        border: 1px solid #ff6600;
+        outline: none;
+        box-shadow: none !important; }
+    .slider-img .slider-text p:nth-child(1) {
+      font-size: 56px;
+      letter-spacing: 11px;
+      font-family: 'Poppins';
+      line-height: 1; }
+    .slider-img .slider-text p:nth-of-type(2) {
+      font-size: 54px;
+      line-height: 1.5;
+      letter-spacing: 11px;
+      font-family: 'Poppins'; }
+    .slider-img .slider-text p:nth-of-type(3) {
+      font-size: 10px; }
+
+/*---booking css---*/
+.booking_tabs .tab_main {
+  margin: -40px auto;
+  position: relative; }
+  .booking_tabs .tab_main .tab {
+    overflow: hidden;
+    background-color: transparent; }
+    .booking_tabs .tab_main .tab .nav-tabs .nav-item a.nav-link {
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 0; }
+      .booking_tabs .tab_main .tab .nav-tabs .nav-item a.nav-link:hover {
+        border: 0; }
+    .booking_tabs .tab_main .tab .nav-tabs .nav-item a.nav-link.active {
+      background-color: white; }
+.booking_tabs .booking-details {
+  padding: 30px 0; }
+  .booking_tabs .booking-details .input-group {
+    margin-bottom: 10px;
+    width: 100% !important; }
+  .booking_tabs .booking-details label {
+    font-size: 15px;
+    color: #a7a7a7; }
+.booking_tabs .btn-search button {
+  border-radius: 100px;
+  background-color: #ff6600;
+  color: #fff;
+  border: 1px solid #ff6600;
+  width: 200px;
+  padding: 10px 19px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins'; }
+  .booking_tabs .btn-search button:hover {
+    background-color: transparent;
+    border: 1px solid #ff6600;
+    outline: none;
+    box-shadow: none !important;
+    color: #000; }
+
+/*------destination css---------*/
+.destination-section {
+  background: #efecec;
+  margin: 40px 0 0; }
+  .destination-section .destination_div .destination-data {
+    background-color: #fff; }
+  .destination-section .destination_div .details {
+    padding: 12px 15px; }
+    .destination-section .destination_div .details .price {
+      color: #7db921;
+      font-size: inherit;
+      line-height: 1; }
+      .destination-section .destination_div .details .price small {
+        color: #838383;
+        font-size: 0.5em; }
+    .destination-section .destination_div .details .box-title {
+      margin-bottom: 10px;
+      color: #2d3e52;
+      font-size: 16px; }
+
+/*hotal for tour*/
+.hotal_tour .details_offer img {
+  border-radius: 5px; }
+.hotal_tour .details_offer .details_info .star_rating span {
+  color: #eaea18; }
+.hotal_tour .details_offer .details_info p {
+  letter-spacing: 1.5px;
+  font-size: 15px; }
+  .hotal_tour .details_offer .details_info p:nth-of-type(2) {
+    color: #a7a7a7;
+    font-size: 13px; }
+.hotal_tour .details_offer .details_info span {
+  text-decoration: line-through;
+  color: #a7a7a7;
+  margin-right: 6px; }
+  .hotal_tour .details_offer .details_info span b {
+    color: #000; }
+
+/*----best offer section css ----*/
+.best_offer_section {
+  background-image: url(../img/main_image.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto; }
+  .best_offer_section p.offer_title {
+    color: #fff;
+    font-size: 41px; }
+  .best_offer_section .box-img-text-main {
+    background-color: #fff;
+    border-radius: 5px; }
+    .best_offer_section .box-img-text-main .box-img img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .best_offer_section .box-img-text-main .offer-details {
+      padding: 20px 15px; }
+      .best_offer_section .box-img-text-main .offer-details p {
+        font-size: 22px;
+        font-weight: 700; }
+        .best_offer_section .box-img-text-main .offer-details p span {
+          font-weight: 500; }
+      .best_offer_section .box-img-text-main .offer-details ul {
+        padding: 0;
+        list-style-type: none;
+        color: #a7a7a7; }
+        .best_offer_section .box-img-text-main .offer-details ul li {
+          margin-right: 20px;
+          position: relative;
+          font-size: 15px; }
+          .best_offer_section .box-img-text-main .offer-details ul li:nth-child(1):after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: #a7a7a7;
+            display: inline-block;
+            border-radius: 100px;
+            position: absolute;
+            top: 10px;
+            right: -12px; }
+          .best_offer_section .box-img-text-main .offer-details ul li p {
+            font-size: 15px; }
+  .best_offer_section .custom-btn {
+    border-radius: 100px;
+    background-color: #ff6600;
+    color: #fff;
+    border: 1px solid #ff6600;
+    width: 200px;
+    padding: 10px 19px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins'; }
+    .best_offer_section .custom-btn:hover {
+      background-color: transparent;
+      border: 1px solid #ff6600;
+      outline: none;
+      box-shadow: none !important;
+      color: #000; }
+
+/*subscribe section*/
+.subscribe_section {
+  background-image: url(../img/bg_block_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto; }
+  .subscribe_section .subscribe_title {
+    color: #fff;
+    font-size: 40px; }
+    .subscribe_section .subscribe_title p:after {
+      content: "";
+      border: 2px solid #fff;
+      display: block; }
+  .subscribe_section .email_form {
+    text-align: center; }
+    .subscribe_section .email_form .custom-btn {
+      border-radius: 100px;
+      background-color: #ff6600;
+      color: #fff;
+      border: 1px solid #ff6600;
+      width: 200px;
+      padding: 10px 19px;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: 'Poppins'; }
+      .subscribe_section .email_form .custom-btn:hover {
+        background-color: transparent;
+        border: 1px solid #ff6600;
+        outline: none;
+        box-shadow: none !important;
+        color: #000; }
+    .subscribe_section .email_form input {
+      border-radius: 10px;
+      background-color: transparent;
+      color: #fff; }
+      .subscribe_section .email_form input::placeholder {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 15px; }
+
+/*----faq section-----*/
+.faq_section .faq_main_div .faq_title p {
+  font-size: 40px; }
+.faq_section .faq_main_div .custom-btn {
+  color: #000;
+  font-size: 15px; }
+.faq_section .faq_main_div .accordion_text {
+  font-size: 13px;
+  color: #a7a7a7; }
+
+/*---testimonial_section---*/
+.testimonial_section {
+  background-image: url(../img/bg_block_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .testimonial_section .subscribe_title {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 21px; }
+  .testimonial_section .sg-testimonals p {
+    color: #fff; }
+  .testimonial_section .sg-testimonals h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase; }
+
+/*---footer section---*/
+.footer_section {
+  background-color: #efecec; }
+  .footer_section .contact_list ul li i {
+    margin-right: 15px;
+    color: #f76d19; }
+    .footer_section .contact_list ul li i:first-child {
+      width: 10px; }
+  .footer_section .discover_link ul li i {
+    font-size: 11px;
+    margin-right: 10px; }
+  .footer_section .discover_link ul li a {
+    color: #000; }
+  .footer_section .social_media {
+    height: 100px; }
+    .footer_section .social_media ul li {
+      width: 50px; }
+  .footer_section .title_block {
+    font-size: 23px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .custom-nav {
+    position: unset;
+    background-color: #4c7592; }
+    .custom-nav .custom-menu-bar .navbar-nav .nav-item a {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 600; }
+
+  .slider-img .slider-text {
+    top: 40%; }
+    .slider-img .slider-text p:nth-of-type(2) {
+      font-size: 25px; }
+    .slider-img .slider-text p:nth-child(1) {
+      font-size: 38px;
+      letter-spacing: 8px;
+      line-height: 1.5;
+      text-align: center; }
+
+  .booking_tabs {
+    background-image: linear-gradient(to right, #1f687f, #1d5281, #1a5673); }
+    .booking_tabs .booking-details label {
+      color: #fff;
+      width: 100%; }
+    .booking_tabs .tab_main {
+      margin: -33px auto; }
+      .booking_tabs .tab_main ul li {
+        width: 50%;
+        font-size: 12px; }
+      .booking_tabs .tab_main .dropdown_div {
+        width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
